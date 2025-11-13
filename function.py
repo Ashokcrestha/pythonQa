@@ -43,7 +43,7 @@ def add():
 
 add()
 
-#function with parameter
+#function with parameter - you can pass data to function
 
 def test_login(username):
    print("testing login for:", username)
@@ -56,7 +56,7 @@ def addition(num1,num2):
 
 addition(4,10)
 
-#function with return value
+#function with return value -the function send data back to where it is called
 
 def verify_status(code):
    if code == 200:
@@ -67,12 +67,57 @@ def verify_status(code):
 result = verify_status(200)
 print(result)
 
-#function with multiple parameter
+#function with multiple parameter - a function can take more than one parameter (input values) here  a and b are parameters where 4 and 5 is arguments 
+# argumenets - real value you pass to a function when you called it . they are assigned to parameters inside the function
+#parameters - name given in the function definition
 
 def check_credentials(username,password):
    if username == "admin" and password == "12345":
-       print("login succesfully")
+       print("login successfully")
    else:
        print("login failed")
 check_credentials("admin","12345")
       
+
+#Assignement 
+
+#function to print 'testing started' 5 times
+def testing_started():
+   for i in range(5):
+      print("Testing started")
+
+testing_started()
+
+# Function to check if a number is even or odd
+def check_even_odd(number):
+    if number % 2 == 0:
+        print("Even number")
+    else:
+        print("Odd number")
+
+check_even_odd(25)
+
+
+# Function that accepts a test name and prints a running message
+def run_test(test_name):
+    print("Running test:", test_name)
+
+run_test("login Test")
+
+# Function that returns 'PASS' if code is 200, otherwise 'FAIL'
+def verify_status(code):
+   if code == 200:
+      return "PASS"
+   else:
+      return "Fail"
+   
+result = verify_status(200)
+print(result)
+
+# Function to check if username and password match given values
+def check_credentials(username,password):
+   if username == "admin" and password == "12345":
+       print("login successfully")
+   else:
+       print("login failed")
+check_credentials("admin","12345")
