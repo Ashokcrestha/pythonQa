@@ -8,23 +8,23 @@
 
 # conditions example
 
-# test_results ="fail"
+test_results ="fail"
 
-# if test_results=="pass":
-#     print("test passed! goto next test")
-# elif test_results=="fail":
-#     print("test failed! log a bug")
-# else:
-#     print("test result unknown! check again")
+if test_results=="pass":
+     print("test passed! goto next test")
+elif test_results=="fail":
+     print("test failed! log a bug")
+else:
+     print("test result unknown! check again")
 
-# age_vote  = 18
+age_vote  = 18
 
-# if age_vote>=18:
-#     print("eligible")
-# elif age_vote<18:
-#     print("not eligible")
-# else:
-#     print("incorrect ")
+if age_vote>=18:
+     print("eligible")
+elif age_vote<18:
+     print("not eligible")
+else:
+     print("incorrect ")
 
 
 
